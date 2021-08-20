@@ -21,3 +21,11 @@
 `trimmomatic PE -threads 12 trimmed_91614_R1.fastq trimmed_91614_R2.fastq trimmomatic_91614_R1_trimmed.fastq trimmomatic_91614_R1un.trimmed.fastq trimmomatic_91614_R2_trimmed.fastq trimmomatic_91614_R2un.trimmed.fastq SLIDINGWINDOW:4:20 MINLEN:40 LEADING:20 TRAILING:20`
 
 `trimmomatic PE -threads 12 trimmed_91615_R1.fastq trimmed_91615_R2.fastq trimmomatic_91615_R1_trimmed.fastq trimmomatic_91615_R1un.trimmed.fastq trimmomatic_91615_R2_trimmed.fastq trimmomatic_91615_R2un.trimmed.fastq SLIDINGWINDOW:4:20 MINLEN:40 LEADING:20 TRAILING:20`
+
+#### Assembling using MEGAHIT. Used default settings, which MEGAHIT states to be tuned for metagenomic assembly.
+
+`megahit -1 trimmomatic_91614_R1_trimmed.fastq -2 trimmomatic_91614_R2_trimmed.fastq -o megahit-assembly -t 18`
+
+`megahit -1 trimmomatic_91615_R1_trimmed.fastq -2 trimmomatic_91615_R2_trimmed.fastq -o megahit-assembly -t 18`
+
+
