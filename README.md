@@ -18,12 +18,6 @@
 
 #### Trimming Using Trimmomatic. Sliding Window Trimming Approach. Dropping the read if it is a length below 40. Cutting bases off at the start and end of the read if below a threshold quality of 20.
 
-`trimmomatic PE -threads 12 trimmed_91614_R1.fastq trimmed_91614_R2.fastq \
-> trimmomatic_91614_R1_trimmed.fastq trimmomatic_91614_R1un.trimmed.fastq \
-> trimmomatic_91614_R2_trimmed.fastq trimmomatic_91614_R2un.trimmed.fastq \
-> SLIDINGWINDOW:4:20 MINLEN:40 LEADING:20 TRAILING:20`
+`trimmomatic PE -threads 12 trimmed_91614_R1.fastq trimmed_91614_R2.fastq trimmomatic_91614_R1_trimmed.fastq trimmomatic_91614_R1un.trimmed.fastq trimmomatic_91614_R2_trimmed.fastq trimmomatic_91614_R2un.trimmed.fastq SLIDINGWINDOW:4:20 MINLEN:40 LEADING:20 TRAILING:20`
 
-`trimmomatic PE -threads 12 trimmed_91615_R1.fastq trimmed_91615_R2.fastq \
-> trimmomatic_91615_R1_trimmed.fastq trimmomatic_91615_R1un.trimmed.fastq \
-> trimmomatic_91615_R2_trimmed.fastq trimmomatic_91615_R2un.trimmed.fastq \
-> SLIDINGWINDOW:4:20 MINLEN:40 LEADING:20 TRAILING:20`
+`trimmomatic PE -threads 12 trimmed_91615_R1.fastq trimmed_91615_R2.fastq trimmomatic_91615_R1_trimmed.fastq trimmomatic_91615_R1un.trimmed.fastq trimmomatic_91615_R2_trimmed.fastq trimmomatic_91615_R2un.trimmed.fastq SLIDINGWINDOW:4:20 MINLEN:40 LEADING:20 TRAILING:20`
