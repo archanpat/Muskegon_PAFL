@@ -1,0 +1,326 @@
+/stor/work/Ochman/archan/bin/quast/metaquast.py final.contigs.fa
+
+Version: 5.1.0rc1
+
+System information:
+  OS: Linux-4.15.0-154-generic-x86_64-with-debian-buster-sid (linux_64)
+  Python version: 3.6.13
+  CPUs number: 72
+
+Started: 2021-08-26 15:01:49
+
+Logging to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/metaquast.log
+NOTICE: Maximum number of threads is set to 18 (use --threads option to set it manually)
+
+Contigs:
+  Pre-processing...
+  final.contigs.fa ==> final.contigs
+
+No references are provided, starting to search for reference genomes in SILVA 16S rRNA database and to download them from NCBI...
+
+2021-08-26 15:02:16
+
+Downloading SILVA 16S ribosomal RNA gene database (version 138)...
+Processing downloaded file. Logging to /stor/work/Ochman/archan/bin/quast/quast_libs/silva/blastdb.log...
+Unpacking and replacing " " with "_"...
+gunzip -c /stor/work/Ochman/archan/bin/quast/quast_libs/silva/SILVA_138_SSURef_NR99_tax_silva.fasta.gz \
+> /stor/work/Ochman/archan/bin/quast/quast_libs/silva/SILVA_138_SSURef_NR99_tax_silva.fasta.unpacked \
+2>> /stor/work/Ochman/archan/bin/quast/quast_libs/silva/blastdb.log
+Making BLAST database...
+/stor/work/Ochman/archan/bin/miniconda3/envs/quast-environment/bin/makeblastdb -in \
+/stor/work/Ochman/archan/bin/quast/quast_libs/silva/SILVA_138_SSURef_NR99_tax_silva.fasta \
+-dbtype nucl -out /stor/work/Ochman/archan/bin/quast/quast_libs/silva/silva.138.db \
+>> /stor/work/Ochman/archan/bin/quast/quast_libs/silva/blastdb.log 2>> /stor/work/Ochman/archan/bin/quast/quast_libs/silva/blastdb.log
+Running BlastN..
+  processing final.contigs
+/stor/work/Ochman/archan/bin/miniconda3/envs/quast-environment/bin/blastn -query final.contigs.fa \
+-db /stor/work/Ochman/archan/bin/quast/quast_libs/silva/silva.138.db -outfmt 7 -num_threads \
+18 > quast_results/results_2021_08_26_15_01_48/quast_downloaded_references/blast.res_final-contigs \
+2>> quast_results/results_2021_08_26_15_01_48/quast_downloaded_references/blast.err
+  BLAST results for final.contigs are saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/quast_downloaded_references/blast.res_final-contigs...
+
+
+2021-08-26 15:15:30
+Trying to download found references from NCBI. Totally 50 organisms to try.
+  unidentified_marine_bacterioplankton          | not found in the NCBI database
+  unidentified_marine_bacterioplankton was not found in NCBI database, trying to download the next best match
+  Desertimonas_flava                            | successfully downloaded (total 1, 49 more to go)
+microbial mat metagenome has too fragmented reference genome! It will not be downloaded.
+  microbial_mat_metagenome                      | not found in the NCBI database
+  microbial_mat_metagenome was not found in NCBI database, trying to download the next best match
+  Peredibacter_starrii                          | not found in the NCBI database
+  Peredibacter_starrii was not found in NCBI database, trying to download the next best match
+  Bacteriovorax_sp._EPC3                        | not found in the NCBI database
+  Bacteriovorax_sp._EPC3 was not found in NCBI database, trying to download the next best match
+  Bacteriovorax_sp._EPA                         | not found in the NCBI database
+  marine_metagenome                             | successfully downloaded (total 2, 47 more to go)
+groundwater metagenome has too fragmented reference genome! It will not be downloaded.
+  groundwater_metagenome                        | not found in the NCBI database
+  groundwater_metagenome was not found in NCBI database, trying to download the next best match
+  Iamia_sp._T2-YC6790                           | not found in the NCBI database
+  Iamia_sp._T2-YC6790 was not found in NCBI database, trying to download the next best match
+  bacterium_enrichment_culture_clone_B97(2011)  | not found in the NCBI database
+Failed downloading freshwater sediment metagenome!
+  freshwater_sediment_metagenome                | not found in the NCBI database
+  freshwater_sediment_metagenome was not found in NCBI database, trying to download the next best match
+  bacterium_enrichment_culture_clone_B213(2011) | not found in the NCBI database
+  freshwater_metagenome                         | successfully downloaded (total 3, 44 more to go)
+  endosymbiont_of_Codakia_orbicularis           | successfully downloaded (total 4, 43 more to go)
+  bacterium_enrichment_culture_clone_B197(2011) | not found in the NCBI database
+  bacterium_enrichment_culture_clone_B197(2011) was not found in NCBI database, trying to download the next best match
+  Roseomonas_gilardii                           | successfully downloaded (total 5, 42 more to go)
+  bacterium_SH3-11                              | not found in the NCBI database
+  bacterium_SH3-11 was not found in NCBI database, trying to download the next best match
+Pedosphaera parvula Ellin514 has too fragmented reference genome! It will not be downloaded.
+  Pedosphaera_parvula_Ellin514                  | not found in the NCBI database
+  Pedosphaera_parvula_Ellin514 was not found in NCBI database, trying to download the next best match
+Verrucomicrobia bacterium ADurb.Bin118 has too fragmented reference genome! It will not be downloaded.
+  Verrucomicrobia_bacterium_ADurb.Bin118        | not found in the NCBI database
+  Verrucomicrobia_bacterium_ADurb.Bin118 was not found in NCBI database, trying to download the next best match
+  bacterium_Ellin516                            | not found in the NCBI database
+  bacterium_Ellin6529                           | not found in the NCBI database
+  bacterium_Ellin6529 was not found in NCBI database, trying to download the next best match
+Clostridium polyendosporum has too fragmented reference genome! It will not be downloaded.
+  Clostridium_polyendosporum                    | not found in the NCBI database
+  Clostridium_polyendosporum was not found in NCBI database, trying to download the next best match
+  Clostridium_sp._CL-2                          | successfully downloaded (total 6, 40 more to go)
+  bacterium_Ellin5102                           | not found in the NCBI database
+  bacterium_Ellin5102 was not found in NCBI database, trying to download the next best match
+  bacterium_Ellin515                            | not found in the NCBI database
+  bacterium_Ellin515 was not found in NCBI database, trying to download the next best match
+  Verrucomicrobia_bacterium_ADurb.Bin118        | not found in the NCBI database
+  Verrucomicrobia_bacterium_ADurb.Bin118 was not found in NCBI database, trying to download the next best match
+  Pedosphaera_parvula_Ellin514                  | not found in the NCBI database
+actinobacterium SCGC AAA041-L13 has too fragmented reference genome! It will not be downloaded.
+  actinobacterium_SCGC_AAA041-L13               | not found in the NCBI database
+  actinobacterium_SCGC_AAA041-L13 was not found in NCBI database, trying to download the next best match
+  Candidatus_Planktophila_dulcis                | successfully downloaded (total 7, 38 more to go)
+  Wolbachia_sp._PL13                            | successfully downloaded (total 8, 37 more to go)
+  Wandonia_haliotis                             | not found in the NCBI database
+  Wandonia_haliotis was not found in NCBI database, trying to download the next best match
+  Fluviicola_sp._YS_1.2.4                       | not found in the NCBI database
+  Fluviicola_sp._YS_1.2.4 was not found in NCBI database, trying to download the next best match
+  Fluviicola_hefeinensis                        | not found in the NCBI database
+  Vulgatibacter_incomptus                       | successfully downloaded (total 9, 35 more to go)
+  Vibrionimonas_magnilacihabitans               | successfully downloaded (total 10, 34 more to go)
+  Verrucomicrobia_bacterium                     | successfully downloaded (total 11, 33 more to go)
+  Tuber_borchii_symbiont_b-17BO                 | not found in the NCBI database
+  Tuber_borchii_symbiont_b-17BO was not found in NCBI database, trying to download the next best match
+Bacteroidetes bacterium RIFCSPLOWO2 12 FULL 35 15 has too fragmented reference genome! It will not be downloaded.
+  Bacteroidetes_bacterium_RIFCSPLOWO2_12_FULL_35_15 | not found in the NCBI database
+  Bacteroidetes_bacterium_RIFCSPLOWO2_12_FULL_35_15 was not found in NCBI database, trying to download the next best match
+  Bacteroidetes_bacterium_OLB11                 | successfully downloaded (total 12, 32 more to go)
+  Trichocoleus_desertorum_CAU7                  | not found in the NCBI database
+  Trichocoleus_desertorum_CAU7 was not found in NCBI database, trying to download the next best match
+  Leptolyngbya_scottii_EcFYyyy_00               | not found in the NCBI database
+  Leptolyngbya_scottii_EcFYyyy_00 was not found in NCBI database, trying to download the next best match
+  Anabaena_sp._SKSF1                            | not found in the NCBI database
+  Anabaena_sp._SKSF1 was not found in NCBI database, trying to download the next best match
+  Anabaena_sp._90                               | successfully downloaded (total 13, 31 more to go)
+  Terrimonas_terrae                             | not found in the NCBI database
+  Terrimonas_terrae was not found in NCBI database, trying to download the next best match
+  Filimonas_aurantiibacter                      | not found in the NCBI database
+  Filimonas_aurantiibacter was not found in NCBI database, trying to download the next best match
+  Niastella_sp._HME8655                         | not found in the NCBI database
+  Niastella_sp._HME8655 was not found in NCBI database, trying to download the next best match
+  Ferruginibacter_lapsinanis                    | not found in the NCBI database
+  Terrimonas_aquatica                           | not found in the NCBI database
+  Terrimonas_aquatica was not found in NCBI database, trying to download the next best match
+  Hypsibius_dujardini                           | successfully downloaded (total 14, 29 more to go)
+  Synechococcus_sp._MW77D1                      | not found in the NCBI database
+  Synechococcus_sp._MW77D1 was not found in NCBI database, trying to download the next best match
+  Synechococcus_sp._MW72C6                      | not found in the NCBI database
+  Synechococcus_sp._MW72C6 was not found in NCBI database, trying to download the next best match
+  Synechococcus_sp._MW10#1                      | not found in the NCBI database
+  Synechococcus_sp._MW73B4                      | not found in the NCBI database
+  Synechococcus_sp._MW73B4 was not found in NCBI database, trying to download the next best match
+  Synechococcus_sp._MW72C6                      | not found in the NCBI database
+  Synechococcus_sp._MW72C6 was not found in NCBI database, trying to download the next best match
+  Synechococcus_sp._MW10#1                      | not found in the NCBI database
+  Streptomyces_sp._IMTB_2501                    | successfully downloaded (total 15, 26 more to go)
+  Streptomyces_sp._2114.2                       | successfully downloaded (total 16, 25 more to go)
+  Streptococcus_pneumoniae                      | successfully downloaded (total 17, 24 more to go)
+  Steroidobacter_sp._JC2953                     | not found in the NCBI database
+  Steroidobacter_sp._JC2953 was not found in NCBI database, trying to download the next best match
+  bacterium_Ellin5264                           | not found in the NCBI database
+  bacterium_Ellin5264 was not found in NCBI database, trying to download the next best match
+  Hypsibius_dujardini                           | was downloaded previously (total 18, 23 more to go)
+  Sphingorhabdus_wooponensis                    | successfully downloaded (total 19, 22 more to go)
+  Sphingomonas_sp._SaS1                         | not found in the NCBI database
+  Sphingomonas_sp._SaS1 was not found in NCBI database, trying to download the next best match
+  Sphingobium_yanoikuyae                        | successfully downloaded (total 20, 21 more to go)
+  Sorangium_cellulosum_So_ce56                  | successfully downloaded (total 21, 20 more to go)
+  Serratia_marcescens                           | successfully downloaded (total 22, 19 more to go)
+  Sediminibacterium_sp                          | successfully downloaded (total 23, 18 more to go)
+  Schizothrix_sp._UAM_403                       | not found in the NCBI database
+  Schizothrix_sp._UAM_403 was not found in NCBI database, trying to download the next best match
+  Phormidium_sp._LEGE_07317                     | not found in the NCBI database
+  Phormidium_sp._LEGE_07317 was not found in NCBI database, trying to download the next best match
+  Wilmottia_murrayi_ANT.LPE.2                   | not found in the NCBI database
+  Wilmottia_murrayi_ANT.LPE.2 was not found in NCBI database, trying to download the next best match
+  Oscillatoriaceae_cyanobacterium_ThrGT9        | not found in the NCBI database
+  Salinirepens_amamiensis                       | not found in the NCBI database
+  Salinirepens_amamiensis was not found in NCBI database, trying to download the next best match
+  Fluviicola_hefeinensis                        | not found in the NCBI database
+  Fluviicola_hefeinensis was not found in NCBI database, trying to download the next best match
+  Fluviicola_taffensis_DSM_16823                | successfully downloaded (total 24, 16 more to go)
+  Rhodoluna_lacicola                            | successfully downloaded (total 25, 15 more to go)
+  Rhodobacteraceae_bacterium                    | successfully downloaded (total 26, 14 more to go)
+  Rhodobacter_sp._SL24                          | not found in the NCBI database
+  Rhodobacter_sp._SL24 was not found in NCBI database, trying to download the next best match
+Rhodobacter sp. CACIA14H1 has too fragmented reference genome! It will not be downloaded.
+  Rhodobacter_sp._CACIA14H1                     | not found in the NCBI database
+  Rhodobacter_sp._CACIA14H1 was not found in NCBI database, trying to download the next best match
+  Rhodobacter_sp._7A-375                        | not found in the NCBI database
+  Rhodobacter_sp._7A-375 was not found in NCBI database, trying to download the next best match
+  Rhodobacter_sphaeroides_2.4.1                 | successfully downloaded (total 27, 13 more to go)
+  Ralstonia_pickettii_DTP0602                   | successfully downloaded (total 28, 12 more to go)
+  Pseudohongiella_spirulinae                    | successfully downloaded (total 29, 11 more to go)
+  Pseudobacteriovorax_antillogorgiicola         | successfully downloaded (total 30, 10 more to go)
+  Pseudarcicella_sp._HME7025                    | successfully downloaded (total 31, 9 more to go)
+  Pseudanabaena_sp._CMAA1555                    | not found in the NCBI database
+Pseudanabaena biceps PCC 7429 has too fragmented reference genome! It will not be downloaded.
+  Pseudanabaena_biceps_PCC_7429                 | not found in the NCBI database
+  Pseudanabaena_biceps_PCC_7429 was not found in NCBI database, trying to download the next best match
+  Acaryochloris_marina_MBIC11017                | successfully downloaded (total 32, 7 more to go)
+  Pontibacter_sp._YJ19                          | not found in the NCBI database
+  Pontibacter_sp._YJ19 was not found in NCBI database, trying to download the next best match
+  Aquiflexum_sp                                 | not found in the NCBI database
+  Aquiflexum_sp was not found in NCBI database, trying to download the next best match
+  iron-reducing_bacterium_enrichment_culture_clone_HN126 | not found in the NCBI database
+  iron-reducing_bacterium_enrichment_culture_clone_HN126 was not found in NCBI database, trying to download the next best match
+bioreactor metagenome has too fragmented reference genome! It will not be downloaded.
+  bioreactor_metagenome                         | not found in the NCBI database
+  Polynucleobacter_acidiphobus                  | successfully downloaded (total 33, 5 more to go)
+  Planctomycetes_bacterium_SCGC_AAA282-C19      | successfully downloaded (total 34, 4 more to go)
+Planctomycetaceae bacterium BBD 1991-11 has too fragmented reference genome! It will not be downloaded.
+  Planctomycetaceae_bacterium_BBD_1991-11       | not found in the NCBI database
+  Planctomycetaceae_bacterium_BBD_1991-11 was not found in NCBI database, trying to download the next best match
+  bacterium_enrichment_culture_clone_12631      | not found in the NCBI database
+  bacterium_enrichment_culture_clone_12631 was not found in NCBI database, trying to download the next best match
+  Nannochloropsis_gaditana                      | successfully downloaded (total 35, 3 more to go)
+  Paenibacillus_medicaginis                     | not found in the NCBI database
+  Paenibacillus_medicaginis was not found in NCBI database, trying to download the next best match
+  Paenibacillus_swuensis                        | successfully downloaded (total 36, 2 more to go)
+  Opitutus_terrae_PB90-1                        | successfully downloaded (total 37, 1 more to go)
+  Opitutus_sp._VeGlc2                           | not found in the NCBI database
+  Opitutus_sp._VeGlc2 was not found in NCBI database, trying to download the next best match
+  soil_metagenome                               | successfully downloaded (total 38, 0 more to go)
+
+Downloaded reference(s):
+  /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/quast_downloaded_references/Acaryochloris_marina_MBIC11017.fasta ==> Acaryochloris_marina_MBIC11017
+  /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/quast_downloaded_references/Anabaena_sp._90.fasta ==> Anabaena_sp._90
+  /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/quast_downloaded_references/Bacteroidetes_bacterium_OLB11.fasta ==> Bacteroidetes_bacterium_OLB11
+  /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/quast_downloaded_references/Candidatus_Planktophila_dulcis.fasta ==> Candidatus_Planktophila_dulcis
+  /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/quast_downloaded_references/Clostridium_sp._CL_2.fasta ==> Clostridium_sp._CL_2
+  /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/quast_downloaded_references/Desertimonas_flava.fasta ==> Desertimonas_flava
+  /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/quast_downloaded_references/Fluviicola_taffensis_DSM_16823.fasta ==> Fluviicola_taffensis_DSM_16823
+  /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/quast_downloaded_references/Hypsibius_dujardini.fasta ==> Hypsibius_dujardini
+  /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/quast_downloaded_references/Nannochloropsis_gaditana.fasta ==> Nannochloropsis_gaditana
+  /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/quast_downloaded_references/Opitutus_terrae_PB90_1.fasta ==> Opitutus_terrae_PB90_1
+  /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/quast_downloaded_references/Paenibacillus_swuensis.fasta ==> Paenibacillus_swuensis
+  /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/quast_downloaded_references/Planctomycetes_bacterium_SCGC_AAA282_C19.fasta ==> Planctomycetes_bacterium_SCGC_AAA282_C19
+  /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/quast_downloaded_references/Polynucleobacter_acidiphobus.fasta ==> Polynucleobacter_acidiphobus
+  /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/quast_downloaded_references/Pseudarcicella_sp._HME7025.fasta ==> Pseudarcicella_sp._HME7025
+  /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/quast_downloaded_references/Pseudobacteriovorax_antillogorgiicola.fasta ==> Pseudobacteriovorax_antillogorgiicola
+  /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/quast_downloaded_references/Pseudohongiella_spirulinae.fasta ==> Pseudohongiella_spirulinae
+  /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/quast_downloaded_references/Ralstonia_pickettii_DTP0602.fasta ==> Ralstonia_pickettii_DTP0602
+  /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/quast_downloaded_references/Rhodobacter_sphaeroides_2.4.1.fasta ==> Rhodobacter_sphaeroides_2.4.1
+  /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/quast_downloaded_references/Rhodobacteraceae_bacterium.fasta ==> Rhodobacteraceae_bacterium
+  /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/quast_downloaded_references/Rhodoluna_lacicola.fasta ==> Rhodoluna_lacicola
+  /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/quast_downloaded_references/Roseomonas_gilardii.fasta ==> Roseomonas_gilardii
+  /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/quast_downloaded_references/Sediminibacterium_sp.fasta ==> Sediminibacterium_sp
+  /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/quast_downloaded_references/Serratia_marcescens.fasta ==> Serratia_marcescens
+  /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/quast_downloaded_references/Sorangium_cellulosum_So_ce56.fasta ==> Sorangium_cellulosum_So_ce56
+  /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/quast_downloaded_references/Sphingobium_yanoikuyae.fasta ==> Sphingobium_yanoikuyae
+  /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/quast_downloaded_references/Sphingorhabdus_wooponensis.fasta ==> Sphingorhabdus_wooponensis
+  /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/quast_downloaded_references/Streptococcus_pneumoniae.fasta ==> Streptococcus_pneumoniae
+  /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/quast_downloaded_references/Streptomyces_sp._2114.2.fasta ==> Streptomyces_sp._2114.2
+  /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/quast_downloaded_references/Streptomyces_sp._IMTB_2501.fasta ==> Streptomyces_sp._IMTB_2501
+  /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/quast_downloaded_references/Verrucomicrobia_bacterium.fasta ==> Verrucomicrobia_bacterium
+  /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/quast_downloaded_references/Vibrionimonas_magnilacihabitans.fasta ==> Vibrionimonas_magnilacihabitans
+  /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/quast_downloaded_references/Vulgatibacter_incomptus.fasta ==> Vulgatibacter_incomptus
+  /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/quast_downloaded_references/Wolbachia_sp._PL13.fasta ==> Wolbachia_sp._PL13
+  /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/quast_downloaded_references/endosymbiont_of_Codakia_orbicularis.fasta ==> endosymbiont_of_Codakia_orbicularis
+  /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/quast_downloaded_references/freshwater_metagenome.fasta ==> freshwater_metagenome
+  /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/quast_downloaded_references/marine_metagenome.fasta ==> marine_metagenome
+  /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/quast_downloaded_references/soil_metagenome.fasta ==> soil_metagenome
+  All references were combined in combined_reference.fasta
+
+Starting quast.py for the combined reference...
+(logging to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/combined_reference/quast.log)
+
+Excluding downloaded references with low genome fraction from further analysis..
+
+Filtered reference(s):
+  /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/quast_downloaded_references/Sediminibacterium_sp.fasta ==> Sediminibacterium_sp
+  /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/quast_downloaded_references/Sphingorhabdus_wooponensis.fasta ==> Sphingorhabdus_wooponensis
+  All references were combined in combined_reference.fasta
+
+Starting quast.py for the corrected combined reference...
+(logging to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/combined_reference/quast.log)
+
+Partitioning contigs into bins aligned to each reference..
+  processing final.contigs
+
+Run QUAST on different references in parallel..
+
+Starting quast.py for the contigs aligned to Sediminibacterium_sp... (logging to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/runs_per_reference/Sediminibacterium_sp/quast.log)
+
+Starting quast.py for the contigs aligned to Sphingorhabdus_wooponensis... (logging to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/runs_per_reference/Sphingorhabdus_wooponensis/quast.log)
+
+Starting quast.py for the contigs not aligned anywhere... (logging to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/not_aligned/quast.log)
+
+2021-08-26 15:28:24
+Summarizing results...
+  Drawing # contigs metaQUAST summary plot...
+    saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/summary/PDF/num_contigs.pdf
+  Drawing Largest contig metaQUAST summary plot...
+    saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/summary/PDF/Largest_contig.pdf
+  Drawing Total length metaQUAST summary plot...
+    saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/summary/PDF/Total_length.pdf
+  Drawing Largest alignment metaQUAST summary plot...
+    saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/summary/PDF/Largest_alignment.pdf
+  Drawing Total aligned length metaQUAST summary plot...
+    saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/summary/PDF/Total_aligned_length.pdf
+  Drawing Total length (>= 1000 bp) metaQUAST summary plot...
+    saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/summary/PDF/Total_length_(ge_1000_bp).pdf
+  Drawing Total length (>= 10000 bp) metaQUAST summary plot...
+    saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/summary/PDF/Total_length_(ge_10000_bp).pdf
+  Drawing Total length (>= 50000 bp) metaQUAST summary plot...
+    saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/summary/PDF/Total_length_(ge_50000_bp).pdf
+  Drawing # misassemblies metaQUAST summary plot...
+    saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/summary/PDF/num_misassemblies.pdf
+  Drawing metaQUAST summary misassemblies plot for final.contigs...
+    saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/summary/PDF/final-contigs_misassemblies.pdf
+  Drawing Misassembled contigs length metaQUAST summary plot...
+    saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/summary/PDF/Misassembled_contigs_length.pdf
+  Drawing # mismatches per 100 kbp metaQUAST summary plot...
+    saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/summary/PDF/num_mismatches_per_100_kbp.pdf
+  Drawing # indels per 100 kbp metaQUAST summary plot...
+    saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/summary/PDF/num_indels_per_100_kbp.pdf
+  Drawing # N's per 100 kbp metaQUAST summary plot...
+    saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/summary/PDF/num_Ns_per_100_kbp.pdf
+  Drawing Genome fraction (%) metaQUAST summary plot...
+    saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/summary/PDF/Genome_fraction.pdf
+  Drawing Duplication ratio metaQUAST summary plot...
+    saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/summary/PDF/Duplication_ratio.pdf
+  Drawing NGA50 metaQUAST summary plot...
+    saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/summary/PDF/NGA50.pdf
+  Drawing LGA50 metaQUAST summary plot...
+    saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/summary/PDF/LGA50.pdf
+
+  Text versions of reports and plots for each metric (for all references and assemblies) are saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/summary/
+  Icarus (contig browser) is saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/icarus.html
+  Drawing interactive Krona plots...
+  Krona chart for final.contigs is saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/krona_charts/final.contigs_taxonomy_chart.html
+  Extended version of HTML-report (for all references and assemblies) is saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/report.html
+
+MetaQUAST finished.
+  Log is saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/metaquast.log
+
+Finished: 2021-08-26 15:28:29
+Elapsed time: 0:26:40.239996
+Total NOTICEs: 10; WARNINGs: 0; non-fatal ERRORs: 0
+
+Thank you for using QUAST!

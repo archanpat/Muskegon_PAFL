@@ -1,0 +1,47 @@
+/stor/work/Ochman/archan/bin/quast/quast.py --min-identity 90.0 --colors #E31A1C --ls solid --no-check-meta --contig-thresholds 1000,5000,10000,25000,50000 -t 18 /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/quast_corrected_input/final-contigs_not_aligned_anywhere.fasta -o /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/not_aligned --labels final.contigs
+
+Started: 2021-08-26 15:28:05
+
+Logging to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/not_aligned/quast.log
+
+CWD: /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit
+Main parameters: 
+  MODE: meta, threads: 18, min contig length: 500, min alignment length: 65, min alignment IDY: 90.0, \
+  ambiguity: one, threshold for extensive misassembly size: 1000
+
+Contigs:
+  Pre-processing...
+  /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/quast_corrected_input/final-contigs_not_aligned_anywhere.fasta ==> final.contigs
+
+2021-08-26 15:28:11
+Running Basic statistics processor...
+  Contig files: 
+    final.contigs
+  Calculating N50 and L50...
+    final.contigs, N50 = 1073, L50 = 40060, Total length = 179346006, GC % = 47.10, # N's per 100 kbp =  0.00
+  Drawing Nx plot...
+    saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/not_aligned/basic_stats/Nx_plot.pdf
+  Drawing cumulative plot...
+    saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/not_aligned/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/not_aligned/basic_stats/GC_content_plot.pdf
+  Drawing final.contigs GC content plot...
+    saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/not_aligned/basic_stats/final.contigs_GC_content_plot.pdf
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2021-08-26 15:28:21
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating PDF with all tables and plots...
+  2 of 2: Creating Icarus viewers...
+Done
+
+2021-08-26 15:28:24
+RESULTS:
+  Text versions of total report are saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/not_aligned/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/not_aligned/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/not_aligned/report.html
+  PDF version (tables and plots) is saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/not_aligned/report.pdf
+  Icarus (contig browser) is saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/not_aligned/icarus.html

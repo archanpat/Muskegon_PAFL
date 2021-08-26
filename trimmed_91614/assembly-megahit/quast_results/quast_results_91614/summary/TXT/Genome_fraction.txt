@@ -1,0 +1,3 @@
+Assemblies                  final.contigs
+Sediminibacterium_sp        54.898       
+Sphingorhabdus_wooponensis  17.363       

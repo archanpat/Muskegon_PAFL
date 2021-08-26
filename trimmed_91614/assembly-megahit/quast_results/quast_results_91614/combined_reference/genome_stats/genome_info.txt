@@ -1,0 +1,51 @@
+reference chromosomes:
+	Sediminibacterium_sp_QYPL01000001.1 (total length: 49101 bp, total length without N's: 49101 bp, maximal covered length: 25191 bp)
+	Sediminibacterium_sp_QYPL01000002.1 (total length: 164928 bp, total length without N's: 164928 bp, maximal covered length: 66871 bp)
+	Sediminibacterium_sp_QYPL01000003.1 (total length: 87513 bp, total length without N's: 87513 bp, maximal covered length: 58307 bp)
+	Sediminibacterium_sp_QYPL01000004.1 (total length: 138664 bp, total length without N's: 138664 bp, maximal covered length: 82420 bp)
+	Sediminibacterium_sp_QYPL01000005.1 (total length: 145682 bp, total length without N's: 145682 bp, maximal covered length: 78721 bp)
+	Sediminibacterium_sp_QYPL01000006.1 (total length: 78514 bp, total length without N's: 78514 bp, maximal covered length: 29466 bp)
+	Sediminibacterium_sp_QYPL01000007.1 (total length: 14154 bp, total length without N's: 14154 bp, maximal covered length: 11356 bp)
+	Sediminibacterium_sp_QYPL01000008.1 (total length: 32082 bp, total length without N's: 32082 bp, maximal covered length: 22412 bp)
+	Sediminibacterium_sp_QYPL01000009.1 (total length: 50173 bp, total length without N's: 50173 bp, maximal covered length: 15207 bp)
+	Sediminibacterium_sp_QYPL01000010.1 (total length: 59504 bp, total length without N's: 59504 bp, maximal covered length: 25764 bp)
+	Sediminibacterium_sp_QYPL01000011.1 (total length: 41312 bp, total length without N's: 41312 bp, maximal covered length: 25318 bp)
+	Sediminibacterium_sp_QYPL01000012.1 (total length: 72266 bp, total length without N's: 72266 bp, maximal covered length: 49160 bp)
+	Sediminibacterium_sp_QYPL01000013.1 (total length: 56234 bp, total length without N's: 56234 bp, maximal covered length: 31488 bp)
+	Sediminibacterium_sp_QYPL01000014.1 (total length: 200235 bp, total length without N's: 200235 bp, maximal covered length: 104164 bp)
+	Sediminibacterium_sp_QYPL01000015.1 (total length: 65063 bp, total length without N's: 65063 bp, maximal covered length: 41020 bp)
+	Sediminibacterium_sp_QYPL01000016.1 (total length: 41673 bp, total length without N's: 41673 bp, maximal covered length: 31950 bp)
+	Sediminibacterium_sp_QYPL01000017.1 (total length: 62211 bp, total length without N's: 62211 bp, maximal covered length: 31317 bp)
+	Sediminibacterium_sp_QYPL01000018.1 (total length: 104384 bp, total length without N's: 104384 bp, maximal covered length: 61430 bp)
+	Sediminibacterium_sp_QYPL01000019.1 (total length: 16998 bp, total length without N's: 16998 bp, maximal covered length: 3985 bp)
+	Sediminibacterium_sp_QYPL01000020.1 (total length: 67063 bp, total length without N's: 67063 bp, maximal covered length: 45243 bp)
+	Sediminibacterium_sp_QYPL01000021.1 (total length: 35663 bp, total length without N's: 35663 bp, maximal covered length: 23567 bp)
+	Sediminibacterium_sp_QYPL01000022.1 (total length: 25473 bp, total length without N's: 25473 bp, maximal covered length: 13399 bp)
+	Sediminibacterium_sp_QYPL01000023.1 (total length: 61057 bp, total length without N's: 61057 bp, maximal covered length: 34303 bp)
+	Sediminibacterium_sp_QYPL01000024.1 (total length: 16644 bp, total length without N's: 16644 bp, maximal covered length: 7705 bp)
+	Sediminibacterium_sp_QYPL01000025.1 (total length: 13477 bp, total length without N's: 13477 bp, maximal covered length: 3649 bp)
+	Sediminibacterium_sp_QYPL01000026.1 (total length: 19086 bp, total length without N's: 19086 bp, maximal covered length: 7992 bp)
+	Sediminibacterium_sp_QYPL01000027.1 (total length: 32534 bp, total length without N's: 32534 bp, maximal covered length: 26152 bp)
+	Sediminibacterium_sp_QYPL01000028.1 (total length: 30477 bp, total length without N's: 30477 bp, maximal covered length: 16150 bp)
+	Sediminibacterium_sp_QYPL01000029.1 (total length: 21519 bp, total length without N's: 21519 bp, maximal covered length: 14349 bp)
+	Sediminibacterium_sp_QYPL01000030.1 (total length: 18880 bp, total length without N's: 18880 bp, maximal covered length: 13070 bp)
+	Sphingorhabdus_wooponensis_NZ_RWJI01000001.1 (total length: 1684678 bp, total length without N's: 1684678 bp, maximal covered length: 264363 bp)
+	Sphingorhabdus_wooponensis_NZ_RWJI01000002.1 (total length: 393999 bp, total length without N's: 393999 bp, maximal covered length: 103244 bp)
+	Sphingorhabdus_wooponensis_NZ_RWJI01000003.1 (total length: 75402 bp, total length without N's: 75402 bp, maximal covered length: 11270 bp)
+	Sphingorhabdus_wooponensis_NZ_RWJI01000004.1 (total length: 7848 bp, total length without N's: 7847 bp, maximal covered length: 0 bp)
+	Sphingorhabdus_wooponensis_NZ_RWJI01000005.1 (total length: 7267 bp, total length without N's: 7267 bp, maximal covered length: 0 bp)
+	Sphingorhabdus_wooponensis_NZ_RWJI01000006.1 (total length: 4811 bp, total length without N's: 4810 bp, maximal covered length: 0 bp)
+	Sphingorhabdus_wooponensis_NZ_RWJI01000007.1 (total length: 2861 bp, total length without N's: 2861 bp, maximal covered length: 0 bp)
+	Sphingorhabdus_wooponensis_NZ_RWJI01000008.1 (total length: 1049 bp, total length without N's: 1049 bp, maximal covered length: 0 bp)
+
+total genome size: 4000479
+
+gap min size: 50
+partial gene/operon min size: 100
+
+
+
+assembly                 | genome    | duplication | gaps      | genes     | partial   | operons   | partial   |
+                         | fraction  | ratio       | number    |           | genes     |           | operons   |
+========================================================================================================================
+final_contigs            | 34.496    | 1.061       | 836       | -         | -         | -         | -         |

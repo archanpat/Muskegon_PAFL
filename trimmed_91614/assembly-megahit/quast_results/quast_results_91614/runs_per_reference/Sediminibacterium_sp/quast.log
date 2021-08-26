@@ -1,0 +1,100 @@
+/stor/work/Ochman/archan/bin/quast/quast.py --min-identity 90.0 --colors #E31A1C --ls solid --no-check-meta --contig-thresholds 1000,5000,10000,25000,50000 --memory-efficient -t 9 /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/quast_corrected_input/final-contigs_to_Sediminibacterium_sp.fasta -R /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/quast_corrected_input/Sediminibacterium_sp.fasta__1 -o /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/runs_per_reference/Sediminibacterium_sp --labels final.contigs
+
+Started: 2021-08-26 15:27:58
+
+Logging to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/runs_per_reference/Sediminibacterium_sp/quast.log
+
+CWD: /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit
+Main parameters: 
+  MODE: meta, threads: 9, min contig length: 500, min alignment length: 65, min alignment IDY: 90.0, \
+  ambiguity: one, threshold for extensive misassembly size: 1000
+
+Reference:
+  /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/quast_corrected_input/Sediminibacterium_sp.fasta__1 ==> Sediminibacterium_sp
+
+Contigs:
+  Pre-processing...
+  /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/quast_corrected_input/final-contigs_to_Sediminibacterium_sp.fasta ==> final.contigs
+
+2021-08-26 15:27:58
+Running Basic statistics processor...
+  Reference genome:
+    Sediminibacterium_sp.fasta__1, length = 1822564, num fragments = 30, GC % = 35.13
+  Contig files: 
+    final.contigs
+  Calculating N50 and L50...
+    final.contigs, N50 = 3204, L50 = 134, Total length = 1456996, GC % = 35.77, # N's per 100 kbp =  0.00
+  Drawing Nx plot...
+    saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/runs_per_reference/Sediminibacterium_sp/basic_stats/Nx_plot.pdf
+  Drawing NGx plot...
+    saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/runs_per_reference/Sediminibacterium_sp/basic_stats/NGx_plot.pdf
+  Drawing cumulative plot...
+    saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/runs_per_reference/Sediminibacterium_sp/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/runs_per_reference/Sediminibacterium_sp/basic_stats/GC_content_plot.pdf
+  Drawing final.contigs GC content plot...
+    saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/runs_per_reference/Sediminibacterium_sp/basic_stats/final.contigs_GC_content_plot.pdf
+Done.
+
+2021-08-26 15:28:00
+Running Contig analyzer...
+  final.contigs
+  Logging to files /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/runs_per_reference/Sediminibacterium_sp/contigs_reports/contigs_report_final-contigs.stdout and contigs_report_final-contigs.stderr...
+  Aligning contigs to the reference
+  /stor/work/Ochman/archan/bin/quast/quast_libs/minimap2/minimap2 -c -x asm10 -B5 \
+  -O4,16 --no-long-join -r 85 -N 50 -s 65 -z 200 --mask-level 0.9 --min-occ 200 -g \
+  2500 --score-N 2 --cs -t 9 quast_results/results_2021_08_26_15_01_48/quast_corrected_input/Sediminibacterium_sp.fasta__1 \
+  quast_results/results_2021_08_26_15_01_48/quast_corrected_input/final-contigs_to_Sediminibacterium_sp.fasta \
+  > quast_results/results_2021_08_26_15_01_48/runs_per_reference/Sediminibacterium_sp/contigs_reports/minimap_output/final-contigs.coords_tmp \
+  2>> quast_results/results_2021_08_26_15_01_48/runs_per_reference/Sediminibacterium_sp/contigs_reports/contigs_report_final-contigs.stderr
+  Analysis is finished.
+
+  Creating total report...
+    saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/runs_per_reference/Sediminibacterium_sp/contigs_reports/misassemblies_report.txt, misassemblies_report.tsv, and misassemblies_report.tex
+  Transposed version of total report...
+    saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/runs_per_reference/Sediminibacterium_sp/contigs_reports/transposed_report_misassemblies.txt, transposed_report_misassemblies.tsv, and transposed_report_misassemblies.tex
+  Creating total report...
+    saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/runs_per_reference/Sediminibacterium_sp/contigs_reports/unaligned_report.txt, unaligned_report.tsv, and unaligned_report.tex
+  Drawing misassemblies by types plot...
+    saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/runs_per_reference/Sediminibacterium_sp/contigs_reports/misassemblies_plot.pdf
+  Drawing misassemblies FRCurve plot...
+    saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/runs_per_reference/Sediminibacterium_sp/contigs_reports/misassemblies_frcurve_plot.pdf
+Done.
+
+2021-08-26 15:28:02
+Running NA-NGA calculation...
+  final.contigs, Largest alignment = 18187, NA50 = 1725, NGA50 = 923, LA50 = 217, LGA50 = 361
+  Drawing cumulative plot...
+    saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/runs_per_reference/Sediminibacterium_sp/aligned_stats/cumulative_plot.pdf
+  Drawing NAx plot...
+    saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/runs_per_reference/Sediminibacterium_sp/aligned_stats/NAx_plot.pdf
+  Drawing NGAx plot...
+    saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/runs_per_reference/Sediminibacterium_sp/aligned_stats/NGAx_plot.pdf
+Done.
+
+2021-08-26 15:28:02
+Running Genome analyzer...
+  NOTICE: No file with genomic features were provided. Use the --features option if you want to specify it.
+
+  NOTICE: No file with operons were provided. Use the -O option if you want to specify it.
+  final.contigs
+  Analysis is finished.
+  Skipping drawing Genome fraction, % histogram... (less than 2 columns histogram makes no sense)
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2021-08-26 15:28:03
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating PDF with all tables and plots...
+  2 of 2: Creating Icarus viewers...
+Done
+
+2021-08-26 15:28:05
+RESULTS:
+  Text versions of total report are saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/runs_per_reference/Sediminibacterium_sp/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/runs_per_reference/Sediminibacterium_sp/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/runs_per_reference/Sediminibacterium_sp/report.html
+  PDF version (tables and plots) is saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/runs_per_reference/Sediminibacterium_sp/report.pdf
+  Icarus (contig browser) is saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/runs_per_reference/Sediminibacterium_sp/icarus.html

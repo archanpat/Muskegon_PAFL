@@ -1,0 +1,4 @@
+Assemblies                  final.contigs
+Sediminibacterium_sp        21323        
+Sphingorhabdus_wooponensis  74034        
+not_aligned                 168358       

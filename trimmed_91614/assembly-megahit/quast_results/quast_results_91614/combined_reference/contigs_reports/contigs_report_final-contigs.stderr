@@ -1,0 +1,20 @@
+[M::mm_idx_gen::3.219*1.51] collected minimizers
+[M::mm_idx_gen::3.477*2.06] sorted minimizers
+[M::main::3.477*2.06] loaded/built the index for 772 target sequence(s)
+[M::mm_mapopt_update::3.730*1.99] mid_occ = 200
+[M::mm_idx_stat] kmer size: 19; skip: 19; is_hpc: 0; #seq: 772
+[M::mm_idx_stat::3.901*1.94] distinct minimizers: 17339150 (98.03% are singletons); average occurrences: 1.042; average spacing: 9.984
+[M::worker_pipeline::5.334*3.96] mapped 171623 sequences
+[M::main] Version: 2.11-r797
+[M::main] CMD: /stor/work/Ochman/archan/bin/quast/quast_libs/minimap2/minimap2 -c -x asm10 -B5 -O4,16 --no-long-join -r 85 -N 100 -s 65 -z 200 --mask-level 1 --min-occ 200 -g 2500 --score-N 2 --cs -t 18 /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/quast_corrected_input/combined_reference.fasta /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/combined_reference/../quast_corrected_input/final_contigs.fa
+[M::main] Real time: 5.368 sec; CPU: 21.152 sec
+[M::mm_idx_gen::0.104*1.32] collected minimizers
+[M::mm_idx_gen::0.123*2.89] sorted minimizers
+[M::main::0.123*2.89] loaded/built the index for 38 target sequence(s)
+[M::mm_mapopt_update::0.137*2.70] mid_occ = 200
+[M::mm_idx_stat] kmer size: 19; skip: 19; is_hpc: 0; #seq: 38
+[M::mm_idx_stat::0.141*2.65] distinct minimizers: 398859 (99.88% are singletons); average occurrences: 1.002; average spacing: 10.012
+[M::worker_pipeline::1.092*6.77] mapped 171623 sequences
+[M::main] Version: 2.11-r797
+[M::main] CMD: /stor/work/Ochman/archan/bin/quast/quast_libs/minimap2/minimap2 -c -x asm10 -B5 -O4,16 --no-long-join -r 85 -N 100 -s 65 -z 200 --mask-level 1 --min-occ 200 -g 2500 --score-N 2 --cs -t 18 /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/quast_corrected_input/combined_reference.fasta /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/combined_reference/../quast_corrected_input/final_contigs.fa__2
+[M::main] Real time: 1.107 sec; CPU: 7.410 sec

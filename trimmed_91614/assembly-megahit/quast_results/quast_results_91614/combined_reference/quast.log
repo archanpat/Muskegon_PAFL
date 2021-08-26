@@ -1,0 +1,102 @@
+/stor/work/Ochman/archan/bin/quast/quast.py --min-identity 90.0 --combined-ref --colors #E31A1C --ls solid --ambiguity-usage all final.contigs.fa -R /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/quast_corrected_input/combined_reference.fasta -o /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/combined_reference --labels final.contigs
+
+Started: 2021-08-26 15:27:09
+
+Logging to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/combined_reference/quast.log
+NOTICE: Output directory already exists and looks like a QUAST output dir. Existing results can be reused (e.g. previously generated alignments)!
+NOTICE: Maximum number of threads is set to 18 (use --threads option to set it manually)
+
+CWD: /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit
+Main parameters: 
+  MODE: meta, threads: 18, min contig length: 500, min alignment length: 65, min alignment IDY: 90.0, \
+  ambiguity: all, threshold for extensive misassembly size: 1000
+
+Reference:
+  /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/quast_corrected_input/combined_reference.fasta ==> combined_reference
+
+Contigs:
+  Pre-processing...
+  final.contigs.fa ==> final.contigs
+
+2021-08-26 15:27:19
+Running Basic statistics processor...
+  Reference genome:
+    combined_reference.fasta, length = 4000479, num fragments = 38, GC % = 45.70
+  Contig files: 
+    final.contigs
+  Calculating N50 and L50...
+    final.contigs, N50 = 1080, L50 = 40098, Total length = 181406758, GC % = 47.03, # N's per 100 kbp =  0.00
+  Drawing Nx plot...
+    saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/combined_reference/basic_stats/Nx_plot.pdf
+  Drawing cumulative plot...
+    saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/combined_reference/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/combined_reference/basic_stats/GC_content_plot.pdf
+  Drawing final.contigs GC content plot...
+    saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/combined_reference/basic_stats/final.contigs_GC_content_plot.pdf
+Done.
+
+2021-08-26 15:27:31
+Running Contig analyzer...
+  final.contigs
+  Logging to files /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/combined_reference/contigs_reports/contigs_report_final-contigs.stdout and contigs_report_final-contigs.stderr...
+  Aligning contigs to the reference
+  /stor/work/Ochman/archan/bin/quast/quast_libs/minimap2/minimap2 -c -x asm10 -B5 \
+  -O4,16 --no-long-join -r 85 -N 100 -s 65 -z 200 --mask-level 1 --min-occ 200 -g \
+  2500 --score-N 2 --cs -t 18 quast_results/results_2021_08_26_15_01_48/quast_corrected_input/combined_reference.fasta \
+  quast_results/results_2021_08_26_15_01_48/quast_corrected_input/final_contigs.fa__2 \
+  > quast_results/results_2021_08_26_15_01_48/combined_reference/contigs_reports/minimap_output/final-contigs.coords_tmp \
+  2>> quast_results/results_2021_08_26_15_01_48/combined_reference/contigs_reports/contigs_report_final-contigs.stderr
+  Alignments: quast_results/results_2021_08_26_15_01_48/combined_reference/contigs_reports/alignments_final-contigs.tsv
+  Analysis is finished.
+
+  Information about interspecies translocations by references for final_contigs is saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/combined_reference/contigs_reports/interspecies_translocations_by_refs_final_contigs.info
+  Drawing Intergenomic misassemblies (found and supposed) metaQUAST summary plot...
+    saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/combined_reference/contigs_reports/intergenomic_misassemblies.pdf
+  Creating total report...
+    saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/combined_reference/contigs_reports/misassemblies_report.txt, misassemblies_report.tsv, and misassemblies_report.tex
+  Transposed version of total report...
+    saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/combined_reference/contigs_reports/transposed_report_misassemblies.txt, transposed_report_misassemblies.tsv, and transposed_report_misassemblies.tex
+  Creating total report...
+    saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/combined_reference/contigs_reports/unaligned_report.txt, unaligned_report.tsv, and unaligned_report.tex
+  Drawing misassemblies by types plot...
+    saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/combined_reference/contigs_reports/misassemblies_plot.pdf
+  Drawing misassemblies FRCurve plot...
+    saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/combined_reference/contigs_reports/misassemblies_frcurve_plot.pdf
+Done.
+
+2021-08-26 15:27:40
+Running NA-NGA calculation...
+  final.contigs, Largest alignment = 18187, NA50 = None, LA50 = None
+  Drawing cumulative plot...
+    saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/combined_reference/aligned_stats/cumulative_plot.pdf
+  Drawing NAx plot...
+    saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/combined_reference/aligned_stats/NAx_plot.pdf
+Done.
+
+2021-08-26 15:27:43
+Running Genome analyzer...
+  NOTICE: No file with genomic features were provided. Use the --features option if you want to specify it.
+
+  NOTICE: No file with operons were provided. Use the -O option if you want to specify it.
+  final.contigs
+  Analysis is finished.
+  Skipping drawing Genome fraction, % histogram... (less than 2 columns histogram makes no sense)
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2021-08-26 15:27:46
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating PDF with all tables and plots...
+  2 of 2: Creating Icarus viewers...
+Done
+
+2021-08-26 15:27:50
+RESULTS:
+  Text versions of total report are saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/combined_reference/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/combined_reference/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/combined_reference/report.html
+  PDF version (tables and plots) is saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/combined_reference/report.pdf
+  Icarus (contig browser) is saved to /stor/work/Ochman/archan/data/trimmed_91614/assembly-megahit/quast_results/results_2021_08_26_15_01_48/combined_reference/icarus.html
