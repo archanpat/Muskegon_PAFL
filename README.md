@@ -28,4 +28,7 @@
 
 `megahit -1 trimmomatic_91615_R1_trimmed.fastq -2 trimmomatic_91615_R2_trimmed.fastq -o megahit-assembly -t 18`
 
+#### Evaluating the genome assemblies using MetaQUAST
+
+`python /stor/work/Ochman/archan/bin/quast/metaquast.py final.contigs.fa`
 
